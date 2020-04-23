@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <script language="javascript" src="funciones.js">
+    </script>
+
+</head>
+
+<body>
+    <form name="fmrDatos" action="nuevaPag.html" target="_self" class="form-horizontal" role="form">
+        <div class="form-group">
+            <div class="col-2">
+        <label for="txtN">Nombres</label>
+                <input type="name" name="txtN" class="form-control" placeholder="Nombres...">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-2">
+                <label for="txtAP">Apellidos</label>
+                <input type="texAP" name="txtAP" class="form-control" placeholder="Apellidos...">
+            </div>
+        </div>
+        <div class="col-1">
+            <label for="rdbs" class="control-label">Sexo</label>
+            <label class="checkbox-inline">
+                <input type="radio" id="rdbsM" name="rdbs" value="M" checked />M
+            </label>
+            <label class="checkbox-inline">
+                <input type="radio" id="rdbsF" name="rdbs" value="F" checked />F </label>
+
+        </div>
+        <label class="col">Seleccione los lenguajes que maneja:</label>
+
+        <div class="col-1">
+            <div class="radio">
+                <input type="checkbox" name="prog1" value="C++">
+
+                <label for="prog1">C++</label>
+
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="prog2" value="Java">
+
+                <label for="prog2">Java</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="prog3" value="Javascript">
+
+                <label for="prog3">Javascript</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="prog4" value="Php">
+
+                <label for="prog4">Php</label>
+            </div>
+        </div>
+
+        <label for="carrera" class="col">Programa Académico</label>
+        <div class="col-2">
+            <div class="form-group">
+                <select class="form-control" name="carrera">
+                    <option value="Ingeniería Industrial">Ingeniería Industrial</option>
+                    <option value="Ingeniería Sistemas">Ingeniería Sistemas</option>
+                    <option value="Matemáticas">Matemáticas</option>
+                    <option value="Psicología">Psicología</option>
+                </select></div>
+        </div>
+        <label class="col"for="desc">Describa cuál es su visión como ingeniero:</label>
+    <div class="col-3">
+    <textarea id="taDesc" class="form-control"name="desc" rows="4" ></textarea>
+
+</div>
+<div class="col-1">
+<input class="form-control"type="submit" name="Enviar"></div>
+
+
+</body>
+
+</html>

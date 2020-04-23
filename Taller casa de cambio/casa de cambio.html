@@ -1,0 +1,97 @@
+		<!DOCTYPE html>
+		<html>
+		<head>
+			<title>Casa de cambio</title>
+			<link rel="stylesheet" type="text/css" href="estilo.css">
+			<script type="text/javascript">
+				function encender() {
+					document.getElementById("bombillo").src="./img/pic_bulbon.GIF"
+					document.getElementById("boton").hidden=true
+					document.getElementById("botoff").hidden=false
+				}
+				function apagar() {
+					document.getElementById("bombillo").src="./img/pic_bulboff.GIF"
+					document.getElementById("boton").hidden=false
+					document.getElementById("botoff").hidden=true
+				}
+				function valorabsoluto() {
+					var valor=parseInt(document.vb.btnVAbs.value)				    
+
+					var valorabs
+					if (valor<0) {
+						valorabs=-valor
+					}else{valorabs=valor}
+					document.vb.btnVAbs.value=""
+					alert("El valor absoluto de "+valor+" es "+valorabs)
+				}				
+
+				function funcion1() {
+					var num1=parseInt(document.value1.valor1.value)
+					var num2=parseInt(document.value2.valor2.value)
+					if (num1%num2==0) {
+						return num2
+					} return 0
+				}
+				function funcion2(numero) {
+					var num1=numero
+					var sumatoria=0
+					for (var i = 1; i <num1; i++) {
+						if (num1%i==0) {
+							sumatoria+=i
+						}
+					}
+					return sumatoria
+				}
+				function funcion3() {
+					if (!funcion1()==0) {
+						alert("La división entre "+document.value1.valor1.value+" y "+document.value2.valor2.value+" es exacta.")
+
+					}else{
+						alert("La división entre "+document.value1.valor1.value+" y "+document.value2.valor2.value+" no es exacta.")
+
+
+					}
+					var num1=funcion2(document.value1.valor1.value)
+					var num2=funcion2(document.value2.valor2.value)
+					if (num2==document.value1.valor1.value & num1==document.value2.valor2.value) {
+						alert("Son amigos")
+					}else{
+						alert("No son amigos")
+
+					}
+				}
+
+			</script>
+		</head>
+		<body>
+			<section id="secbombillo">
+
+				<form>
+					<img src="./img/pic_bulboff.GIF" id="bombillo">
+					<input type="button" name="btnOn" value="Encender" onblur=encender() id="boton">
+					<input type="button" name="btnOff" value="Apagar" onblur=apagar() id="botoff" hidden=true>
+				</section>
+				<section id="secvalor">
+					<h1>Calculadora de valor absoluto</h1>
+				</form>
+				<form name="vb">
+					<input type="text" name="btnVAbs" value="">
+					<input type="button" name="btnCVAbs" value="Calcular valor absoluto" onclick=valorabsoluto()>
+
+				</form></section>
+				<section id=secfunciones>
+					<form name=value1>
+						<label for="valor1">Dividendo:</label>
+						<input type="text" name="valor1" value="">
+					</form>
+					<form name=value2>
+						<label for="valor2">Divisor:  </label>
+						<input type="text" name="valor2" value="">
+					</form>
+					<form>
+						<input type="button" name="fun" value="Funciones" onclick=funcion3()>
+					</form>
+
+				</section>
+			</body>
+			</html>

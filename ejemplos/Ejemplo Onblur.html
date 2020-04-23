@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ejemplo de metodo submit()</title>
+<script language="javascript"
+src="funciones.js">
+</script>
+</head>
+<body>
+<form name="ejemplo" action="window.open('nuevaPag.html')" target="request">¿cual es su nombre?<br>
+<input type="text" name="nombre"><br>
+<input type="submit" value="enviar">
+<input type="reset" value="reset"><br>que lenguajes maneja:<br>
+<select align="top" name="lenguajes"
+size="3"
+onchange="verresultado(this.form)">
+<option value="c++">c++</option>
+<option value="Java">Java</option>
+<option
+value="JavaScript">JavaScript</option>
+<option value="Ninguno">ninguno de los
+anteriores</option>
+</select>
+</form>
+</body>
+</html>

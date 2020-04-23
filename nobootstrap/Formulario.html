@@ -1,0 +1,41 @@
+<html> 
+<head><title>Formulario Datos</title> 
+<meta charset="utf-8">
+<script language="javascript" src="funciones.js"> 
+</script> 
+ 
+</head> 
+<body> 
+<form name="fmrDatos" action="nuevaPag.html" target="_self">
+<label for="txtN">Nombres</label>
+<input type="text" name="txtN"><br>
+<label for="txtAP">Apellidos</label>
+<input type="texAP" name="txtAP"><br>
+ 
+<label for="rdbs">Sexo</label>
+<input type="radio" id="rdbsM" name="rdbs" value="M" checked/>M
+<input type="radio" id="rdbsF" name="rdbs" value="F" checked/>F<br>
+ 
+<label>Seleccione los lenguajes que maneja:</label><br>
+<input type="checkbox" name="prog1" value="C++">
+<label for="prog1"></label>C++<br>
+<input type="checkbox" name="prog2" value="Java">
+<label for="prog2"></label>Java<br>
+<input type="checkbox" name="prog3" value="JavaScript">
+<label for="prog3"></label>JavaScript<br>
+<input type="checkbox" name="prog4" value="Php">
+<label for="prog4">Php</label><br>
+
+<label for="carrera">Programa Académico</label><br>
+<select align="top" name="carrera" size="3">
+<option value="Ingeniería Industrial">Ingeniería Industrial</option>
+<option value="Ingeniería Sistemas">Ingeniería Sistemas</option>
+<option value="Matemáticas">Matemáticas</option>
+<option value="Psicología">Psicología</option></select><br>
+
+<label for="desc">Describa cuál es su visión como ingeniero:</label><br>
+<textarea id="taDesc" name="desc" rows="4" cols="40"></textarea><br>
+<input type="submit" name="Enviar">
+</form>
+</body> 
+</html> 

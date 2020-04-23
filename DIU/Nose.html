@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suma,resta,multiplicación</title>
+	<link rel="stylesheet" type="text/css" href="./estilojavascript.css">
+	<script type="text/javascript">
+		function sumar() {
+			var num1=parseInt(document.form1.txtNum1.value)
+            var num2=parseInt(document.form2.txtNum2.value)
+            var suma=num1+num2
+            alert("La suma entre "+num1+" y "+num2+" es "+suma)
+		}
+				function restar() {
+						var num1=parseInt(document.form1.txtNum1.value)
+            var num2=parseInt(document.form2.txtNum2.value)
+            var resta=num1-num2
+            alert("La resta entre "+num1+" y "+num2+" es "+resta)
+		}
+				function multiplicar() {
+									var num1=parseInt(document.form1.txtNum1.value)
+            var num2=parseInt(document.form2.txtNum2.value)
+            var multiplicacion=num1*num2
+            alert("La ¨multiplicación entre "+num1+" y "+num2+" es "+multiplicacion)
+		}
+
+	</script>
+</head>
+<body>
+	<section>
+<form name="form1">
+	<label for="txtNum1">Numero 1</label>
+	<input type="text" name="txtNum1">
+</form>
+<form name="form2">
+    <label for="txtNum2">Numero 2</label>
+	<input type="text" name="txtNum2">	
+</form>
+<form>
+	<input type="button" name="btnSuma" value="Sumar" onclick=sumar()>
+	<input type="button" name="btnResta" value="Restar" onclick=restar()>
+	<input type="button" name="btnMultiplicacion" value="Multiplicar" onclick=multiplicar()>
+
+</form></section>
+</body>
+</html>

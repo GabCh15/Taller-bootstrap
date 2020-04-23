@@ -1,0 +1,37 @@
+	header{
+       background: lightblue;
+       padding: 20px;
+       margin: 10px;
+
+	}/*regla para id*/
+	#formacion{
+background: lightgreen;
+	}/*regla para clases*/
+	.colorT{
+color: blue;
+
+	}
+	.principal{
+
+		display: flex;
+	}
+	#lenguajes{
+background: #E7C104;
+
+	}
+	#recomendaciones{
+		background: #CC4047;
+	}
+	#gustos{
+background: #E13C19;
+
+	}
+
+	.bordes{
+border-radius: 15px;
+width: 48%;
+	}
+	#img{
+width: 48%;
+
+	}
